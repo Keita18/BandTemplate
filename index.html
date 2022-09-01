@@ -18,14 +18,14 @@
         <li>BAND</li>
         <li>TOUR</li>
         <li>CONTACY</li>
-        <li>MORE</li>
+        <li>MORE  <i class="fa fa-caret-down"></i></li>
       </ul>
-      <a href="google.com">
+      <a class="search" href="google.com">
         <i class="fa fa-search"></i>
       </a>
     </nav>
 
-    <div class="banner">
+    <div id="home" class="banner">
       <div class="content">
         <h2>NEW YORK</h2>
         <p>Thank you, Chicago - A night we won't forget.</p>
@@ -166,5 +166,31 @@
         </ul>
         <p>Powered by w3.css <br> coded by Keita AS</p>
     </footer>
+
+    <div class="ticket-modal">
+        <div class="modal-content main-wrapper">
+            <header>
+                <h2><i class="fa-solid fa-suitcase"></i> Tickets</h2>
+                <span class="search">×</span>
+            </header>
+
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+              
+                  <label for="ticket"><b><i class="fa-solid fa-cart-shopping"></i>Tickets, $15 per person</b></label>
+                  <input type="number" placeholder="How many?" name="ticket" required>
+              
+                  <label for="Email"><b><i class="fa-solid fa-user"></i>Send to</b></label>
+                  <input type="email" placeholder="Enter email?" name="Email" required>
+              
+                  <button type="submit" class="btn">PAY<i class="fa fa-check"></i></button>
+                  <div class="form-footer">
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close<i class="fa fa-remove"></i></button>
+                    <p>Need <a href="">help?</a></p>
+                  </div>
+                </form>
+              </div>
+        </div>
+    </div>
   </body>
 </html>
