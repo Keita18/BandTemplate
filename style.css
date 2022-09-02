@@ -248,6 +248,7 @@ div .buy-btn {
   margin-right: 20px;
 }
 
+.input,
 .contact-content input {
   font-size: 18px;
   padding: 12px;
@@ -296,6 +297,7 @@ footer li:hover {
 }
 
 .ticket-modal {
+  display: none;
   z-index: 3;
   padding-top: 100px;
   position: fixed;
@@ -309,8 +311,8 @@ footer li:hover {
 }
 
 .modal-content {
-    position: relative;
-    animation: animatetop 0.4s;
+  position: relative;
+  animation: animatetop 0.4s;
 }
 
 .modal-content header {
@@ -332,5 +334,64 @@ footer li:hover {
   right: 0;
   top: 0;
   padding: 12px 18px;
+  cursor: pointer;
+}
+
+.modal-content header span:hover {
+  background-color: #929292;
+}
+
+.form-popup {
+  background-color: white;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 55px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  padding: 22px 0;
+}
+
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #929292;
+}
+
+.pay {
+  background-color: #009688;
+  color: #fff !important;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.form-footer {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.form-footer button {
+  font-size: 18px;
   background-color: #f44336;
+  color: white;
 }

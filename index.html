@@ -94,7 +94,7 @@
               <p class="h2">San Francisco</p>
               <span>Sun 29 Nov 2016</span>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="" class="buy-btn">Buy Tickets</a>
+              <a href="" onclick="show()" class="buy-btn">Buy Tickets</a>
             </div>
           </div>
           <div class="city__card">
@@ -103,7 +103,7 @@
               <p class="h2">San Francisco</p>
               <span>Sun 29 Nov 2016</span>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="" class="buy-btn">Buy Tickets</a>
+              <a href="" onclick="show()" class="buy-btn">Buy Tickets</a>
             </div>
           </div>
           <div class="city__card">
@@ -115,7 +115,7 @@
               <p class="h2">San Francisco</p>
               <span>Sun 29 Nov 2016</span>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="" class="buy-btn">Buy Tickets</a>
+              <button onclick="show()" class="buy-btn"> Buy Tickets</button>
             </div>
           </div>
         </div>
@@ -167,23 +167,23 @@
         <p>Powered by w3.css <br> coded by Keita AS</p>
     </footer>
 
-    <div class="ticket-modal">
+    <div id="ticket" class="ticket-modal">
         <div class="modal-content main-wrapper">
             <header>
                 <h2><i class="fa-solid fa-suitcase"></i> Tickets</h2>
-                <span class="search">×</span>
+                <span onclick="closeForm()" id="close" class="search">×</span>
             </header>
 
             <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
               
                   <label for="ticket"><b><i class="fa-solid fa-cart-shopping"></i>Tickets, $15 per person</b></label>
-                  <input type="number" placeholder="How many?" name="ticket" required>
+                  <input class="input" type="number" placeholder="How many?" name="ticket" required>
               
                   <label for="Email"><b><i class="fa-solid fa-user"></i>Send to</b></label>
-                  <input type="email" placeholder="Enter email?" name="Email" required>
+                  <input class="input" type="email" placeholder="Enter email?" name="Email" required>
               
-                  <button type="submit" class="btn">PAY<i class="fa fa-check"></i></button>
+                  <button type="submit" class="btn pay">PAY<i class="fa fa-check"></i></button>
                   <div class="form-footer">
                     <button type="button" class="btn cancel" onclick="closeForm()">Close<i class="fa fa-remove"></i></button>
                     <p>Need <a href="">help?</a></p>
@@ -192,5 +192,7 @@
               </div>
         </div>
     </div>
+    <script src="script.js"></script>
+
   </body>
 </html>
